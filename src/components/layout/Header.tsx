@@ -21,15 +21,30 @@ export default function Header() {
   return (
     <header
       ref={headerRef}
-      className="relative bg-gradient-to-r from-zinc-900 via-zinc-900 to-zinc-900 z-50 overflow-visible"
+      className="relative z-50 overflow-visible"
+      style={{
+        background: "linear-gradient(to right, #121217, #121217, #121217)",
+      }}
     >
-      {/* Animated background elements - zinc and purple theme */}
-      <div className="absolute inset-0 bg-gradient-to-r from-zinc-800/30 via-zinc-700/20 to-zinc-800/30 animate-pulse overflow-hidden"></div>
+      {/* Animated background elements - updated colors */}
+      <div
+        className="absolute inset-0 animate-pulse overflow-hidden"
+        style={{
+          background:
+            "linear-gradient(to right, rgba(18, 18, 23, 0.3), rgba(18, 18, 23, 0.2), rgba(18, 18, 23, 0.3))",
+        }}
+      ></div>
       <div className="absolute top-2 right-2 w-16 h-16 bg-purple-500/10 rounded-full blur-lg animate-bounce"></div>
       <div className="absolute bottom-2 left-2 w-20 h-20 bg-zinc-400/10 rounded-full blur-xl animate-pulse"></div>
 
-      {/* Glass morphism overlay - zinc theme */}
-      <div className="relative backdrop-blur-sm bg-zinc-800/30 border-b border-zinc-700/50">
+      {/* Glass morphism overlay - updated theme */}
+      <div
+        className="relative backdrop-blur-sm border-b"
+        style={{
+          backgroundColor: "rgba(18, 18, 23, 0.3)",
+          borderColor: "rgba(115, 115, 115, 0.5)",
+        }}
+      >
         <div className="container mx-auto px-6 py-4 max-w-7xl">
           <div className="flex items-center justify-between">
             {/* Logo/Name with zinc and stone styling */}

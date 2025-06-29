@@ -1,24 +1,6 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
-  overflow-x: hidden; /* Prevent horizontal scrollbar */
-}
-
-html {
-  overflow-x: hidden; /* Ensure no horizontal scroll on html element */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
